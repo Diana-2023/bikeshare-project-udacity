@@ -42,4 +42,7 @@ To perform this analysis, a Python script (bikeshare.py) is provided in this rep
 ### License
 This project is licensed under the [MIT License](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt).
 
+### Acknowledgements
+- Udacity Programming for Data Science Nanodegree program
+
 
