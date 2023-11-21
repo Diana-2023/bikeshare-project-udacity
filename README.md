@@ -39,4 +39,7 @@ To perform this analysis, a Python script (bikeshare.py) is provided in this rep
 2. Move your bikeshare.py and data files into your local repository.
 3. Run the script by entering the city, month, and day to analyze specific data.
 
+### License
+This project is licensed under the [MIT License](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt).
+
 
