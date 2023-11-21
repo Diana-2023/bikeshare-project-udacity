@@ -58,7 +58,7 @@ def load_data(city, month, day):
     df['End Time'] = pd.to_datetime(df['End Time'])
 
     # extract month from 'Start Time' into a new column named 'journey_month'
-    df['journey_month'] = df['Start Time'].dt.month
+    df.loc[:, 'journey_month'] = df['Start Time'].dt.month
 
     # filter by month if a specific month is selected
     if month != 'all':
@@ -70,7 +70,7 @@ def load_data(city, month, day):
         df = df[df['journey_month'] == chosen_month]
 
     # extract day of the week from 'Start Time' into a new column named 'journey_day_of_week'
-    df['journey_day_of_week'] = df['Start Time'].dt.day_name()
+    df.loc[:, 'journey_day_of_week'] = df['Start Time'].dt.day_name()
 
     # filter by day of the week if a specific day is chosen
     if day != 'all':
@@ -95,7 +95,7 @@ def time_stats(df):
     print("The most common day of the week is: {}".format(common_day_of_week))
 
     # display the most common start hour
-    df['journey_hour'] = df['Start Time'].dt.hour
+    df.loc[:, 'journey_hour'] = df['Start Time'].dt.hour
     common_start_hour = df['journey_hour'].mode()[0]
     print("The most common start hour is: {}".format(common_start_hour))
 
