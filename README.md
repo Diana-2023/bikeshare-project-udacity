@@ -45,4 +45,7 @@ This project is licensed under the [MIT License](https://github.com/git/git-scm.
 ### Acknowledgements
 - Udacity Programming for Data Science Nanodegree program
 
+### External Resources
+- [Stack Overflow](https://stackoverflow.com/) - Used for troubleshooting and finding solutions to coding challenges.
+
 
