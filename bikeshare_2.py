@@ -196,16 +196,19 @@ def main():
             print("Invalid input. Please enter 'yes' or 'no'.")
             raw_data_option = input('Enter yes or no: ').lower()
 
+        # display raw data
         row_index = 0
 
         while raw_data_option == 'yes':
             print(df.iloc[row_index: row_index + 5])
             row_index += 5
 
+            # ask if the user wants to see the next 5 lines of raw data
             raw_data_option = input('\nWould you like to see the next 5 lines of raw data? Enter yes or no.\n').lower()
 
             if raw_data_option != 'yes':
                 break
+        # ask if the user wants to restart
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
